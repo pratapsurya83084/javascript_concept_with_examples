@@ -1,0 +1,17 @@
+js concept
+1.word vs keyword
+2. var ,const, let
+3.diffrenece
+4.window object
+5.browser context api
+6.sttack
+7.heap memory
+8.execution context
+9.lexical environment
+10. hoisting
+11. types in js
+12.refrence values copy
+13. conditions
+14.if else if
+15. switch
+16.truthy and falsy
