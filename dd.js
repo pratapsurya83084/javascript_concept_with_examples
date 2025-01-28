@@ -1,3 +1,5 @@
+
+//errror throw
 function arr(name) {
 if (!name) {
    

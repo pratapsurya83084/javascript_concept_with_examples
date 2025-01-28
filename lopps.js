@@ -27,7 +27,7 @@
  
 // }
 
-//do while
+
 let arr=[2,4,1,0,22,4]
 console.log("before sorting array is : ",arr);
 
