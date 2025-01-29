@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Debounce Example</title>
+  </head>
+  <body>
+    <input
+      type="text"
+      id="searchInput"
+      placeholder="Type to search..."
+    />
+  </body>
+  <script>
+    let counter = 0;
+    function getdata() {
+      console.log("Fetching data", counter++);
+    }
+
+    function mydebounce(call, delay) {
+      let timer;
+      return function (...args) {
+        clearTimeout(timer); // Clear the previous timer
+        timer = setTimeout(() => {
+          call.apply(this, args); // Execute the function after the delay
+        }, delay);
+      };
+    }
+
+    const betterFunction = mydebounce(getdata, 1000);
+
+    document.getElementById("searchInput").addEventListener("keyup", betterFunction);
+ 
+
+    // const api="https://api.github.com/"
+//     const a=document.getElementById("searchInput").values
+//     fetch(`https://api.github.com/search/repositories?q=${a}`)
+//   .then((res) => res.json())
+//   .then((data) => console.log(data));
+
+
+ </script>
+</html>
